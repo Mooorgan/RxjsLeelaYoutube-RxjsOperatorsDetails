@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CreateNewObservableComponent } from './components/create-new-observable/create-new-observable.component';
 import { UnsubscribingAnObservableComponent } from './components/unsubscribing-an-observable/unsubscribing-an-observable.component';
+import { OperatorsBasicComponent } from './components/operators-basic/operators-basic.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CreateNewObservableComponent,
-    UnsubscribingAnObservableComponent
+    UnsubscribingAnObservableComponent,
+    OperatorsBasicComponent
   ],
   imports: [
     BrowserModule,
