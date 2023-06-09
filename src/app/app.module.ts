@@ -3,10 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CreateNewObservableComponent } from './components/create-new-observable/create-new-observable.component';
+import { UnsubscribingAnObservableComponent } from './components/unsubscribing-an-observable/unsubscribing-an-observable.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CreateNewObservableComponent,
+    UnsubscribingAnObservableComponent
   ],
   imports: [
     BrowserModule,
