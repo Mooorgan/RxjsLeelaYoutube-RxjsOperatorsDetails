@@ -11,6 +11,7 @@ import { TakeLastOperatorComponent } from './components/operators/take-last-oper
 import { TakeUntilComponent } from './components/operators/take-until/take-until.component';
 import { TakeWhileComponent } from './components/operators/take-while/take-while.component';
 import { SkipComponent } from './components/operators/skip/skip.component';
+import { SkipLastComponent } from './components/operators/skip-last/skip-last.component';
 
 const routes: Routes = [
   {
@@ -56,6 +57,10 @@ const routes: Routes = [
       {
         path: 'skip',
         component: SkipComponent,
+      },
+      {
+        path: 'skipLast',
+        component: SkipLastComponent,
       },
     ],
   },
