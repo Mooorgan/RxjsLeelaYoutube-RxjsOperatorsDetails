@@ -9,6 +9,7 @@ import { BufferWhenOperatorComponent } from './components/operators/buffer-when-
 import { TakeOperatorComponent } from './components/operators/take-operator/take-operator.component';
 import { TakeLastOperatorComponent } from './components/operators/take-last-operator/take-last-operator.component';
 import { TakeUntilComponent } from './components/operators/take-until/take-until.component';
+import { TakeWhileComponent } from './components/operators/take-while/take-while.component';
 
 const routes: Routes = [
   {
@@ -46,6 +47,10 @@ const routes: Routes = [
       {
         path: 'takeUntil',
         component: TakeUntilComponent,
+      },
+      {
+        path: 'takeWhile',
+        component: TakeWhileComponent,
       },
     ],
   },

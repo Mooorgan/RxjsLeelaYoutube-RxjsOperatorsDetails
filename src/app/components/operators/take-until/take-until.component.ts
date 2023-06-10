@@ -36,6 +36,6 @@ export class TakeUntilComponent implements OnInit, OnDestroy, AfterViewInit {
   }
 
   ngOnDestroy(): void {
-    this.startTimerSubscription.unsubscribe();
+    this.startTimerSubscription && this.startTimerSubscription.unsubscribe();
   }
 }
