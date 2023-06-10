@@ -6,19 +6,20 @@ import { AppComponent } from './app.component';
 import { CreateNewObservableComponent } from './components/create-new-observable/create-new-observable.component';
 import { UnsubscribingAnObservableComponent } from './components/unsubscribing-an-observable/unsubscribing-an-observable.component';
 import { OperatorsBasicComponent } from './components/operators-basic/operators-basic.component';
+import { OperatorsComponent } from './components/operators/operators.component';
+import { BufferOperatorComponent } from './components/operators/buffer-operator/buffer-operator.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CreateNewObservableComponent,
     UnsubscribingAnObservableComponent,
-    OperatorsBasicComponent
+    OperatorsBasicComponent,
+    OperatorsComponent,
+    BufferOperatorComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

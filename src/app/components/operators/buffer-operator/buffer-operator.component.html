@@ -1,0 +1,13 @@
+<button (click)="startInterval()">Start Interval</button>
+<!-- <button
+  style="margin-top: 20px; display: block"
+  id="showButton"
+  (click)="showData()"
+> -->
+<button style="margin-top: 20px; display: block" id="showButton">
+  Show Data
+</button>
+<hr />
+<div *ngIf="intervalData.length">
+  <div *ngFor="let data of intervalData">{{ data }}</div>
+</div>

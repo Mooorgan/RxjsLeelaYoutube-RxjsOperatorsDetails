@@ -8,19 +8,18 @@ import { filter, interval, map } from 'rxjs';
 })
 export class OperatorsBasicComponent implements OnInit {
   ngOnInit() {
-    const newObservable = interval(1000);
-
-    newObservable
-      .pipe(
-        filter((number) => {
-          return number % 2 === 0;
-        }),
-        map((number) => {
-          return `even number: ${number}`;
-        })
-      )
-      .subscribe((number) => {
-        console.log(number);
-      });
+    // const newObservable = interval(1000);
+    // newObservable
+    //   .pipe(
+    //     filter((number) => {
+    //       return number % 2 === 0;
+    //     }),
+    //     map((number) => {
+    //       return `even number: ${number}`;
+    //     })
+    //   )
+    //   .subscribe((number) => {
+    //     console.log(number);
+    //   });
   }
 }
