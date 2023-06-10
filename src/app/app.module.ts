@@ -8,6 +8,7 @@ import { UnsubscribingAnObservableComponent } from './components/unsubscribing-a
 import { OperatorsBasicComponent } from './components/operators-basic/operators-basic.component';
 import { OperatorsComponent } from './components/operators/operators.component';
 import { BufferOperatorComponent } from './components/operators/buffer-operator/buffer-operator.component';
+import { BufferCountOperatorComponent } from './components/operators/buffer-count-operator/buffer-count-operator.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { BufferOperatorComponent } from './components/operators/buffer-operator/
     OperatorsBasicComponent,
     OperatorsComponent,
     BufferOperatorComponent,
+    BufferCountOperatorComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
