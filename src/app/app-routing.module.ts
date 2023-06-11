@@ -20,6 +20,7 @@ import { DistinctUntilKeyChangedComponent } from './components/operators/distinc
 import { FilterComponent } from './components/operators/filter/filter.component';
 import { SampleComponent } from './components/operators/sample/sample.component';
 import { AuditComponent } from './components/operators/audit/audit.component';
+import { ThrottleComponent } from './components/operators/throttle/throttle.component';
 
 const routes: Routes = [
   {
@@ -105,6 +106,10 @@ const routes: Routes = [
       {
         path: 'audit',
         component: AuditComponent,
+      },
+      {
+        path: 'throttle',
+        component: ThrottleComponent,
       },
     ],
   },
