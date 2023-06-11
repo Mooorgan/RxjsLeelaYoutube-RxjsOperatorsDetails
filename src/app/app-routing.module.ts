@@ -17,6 +17,7 @@ import { SkipWhileComponent } from './components/operators/skip-while/skip-while
 import { DistinctComponent } from './components/operators/distinct/distinct.component';
 import { DistinctUntilChangedComponent } from './components/operators/distinct-until-changed/distinct-until-changed.component';
 import { DistinctUntilKeyChangedComponent } from './components/operators/distinct-until-key-changed/distinct-until-key-changed.component';
+import { FilterComponent } from './components/operators/filter/filter.component';
 
 const routes: Routes = [
   {
@@ -90,6 +91,10 @@ const routes: Routes = [
       {
         path: 'distinctUntilKeyChanged',
         component: DistinctUntilKeyChangedComponent,
+      },
+      {
+        path: 'filter',
+        component: FilterComponent,
       },
     ],
   },
