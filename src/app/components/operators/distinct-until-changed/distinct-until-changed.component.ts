@@ -93,8 +93,11 @@ export class DistinctUntilChangedComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    this.noparamsDistinctUntilChanged.unsubscribe();
-    this.comparatorDistinctUntilChanged.unsubscribe();
-    this.objectAndKeyDistinctUntilChanged.unsubscribe();
+    this.noparamsDistinctUntilChanged &&
+      this.noparamsDistinctUntilChanged.unsubscribe();
+    this.comparatorDistinctUntilChanged &&
+      this.comparatorDistinctUntilChanged.unsubscribe();
+    this.objectAndKeyDistinctUntilChanged &&
+      this.objectAndKeyDistinctUntilChanged.unsubscribe();
   }
 }
