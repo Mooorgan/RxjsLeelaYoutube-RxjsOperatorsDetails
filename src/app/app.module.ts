@@ -25,6 +25,7 @@ import { DistinctUntilChangedComponent } from './components/operators/distinct-u
 import { DistinctUntilKeyChangedComponent } from './components/operators/distinct-until-key-changed/distinct-until-key-changed.component';
 import { FilterComponent } from './components/operators/filter/filter.component';
 import { SampleComponent } from './components/operators/sample/sample.component';
+import { AuditComponent } from './components/operators/audit/audit.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { SampleComponent } from './components/operators/sample/sample.component'
     DistinctUntilKeyChangedComponent,
     FilterComponent,
     SampleComponent,
+    AuditComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
