@@ -18,6 +18,7 @@ import { DistinctComponent } from './components/operators/distinct/distinct.comp
 import { DistinctUntilChangedComponent } from './components/operators/distinct-until-changed/distinct-until-changed.component';
 import { DistinctUntilKeyChangedComponent } from './components/operators/distinct-until-key-changed/distinct-until-key-changed.component';
 import { FilterComponent } from './components/operators/filter/filter.component';
+import { SampleComponent } from './components/operators/sample/sample.component';
 
 const routes: Routes = [
   {
@@ -95,6 +96,10 @@ const routes: Routes = [
       {
         path: 'filter',
         component: FilterComponent,
+      },
+      {
+        path: 'sample',
+        component: SampleComponent,
       },
     ],
   },
