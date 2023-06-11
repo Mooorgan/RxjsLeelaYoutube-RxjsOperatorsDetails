@@ -24,6 +24,7 @@ import { ThrottleComponent } from './components/operators/throttle/throttle.comp
 import { FirstComponent } from './components/operators/first/first.component';
 import { LastComponent } from './components/operators/last/last.component';
 import { DebounceComponent } from './components/operators/debounce/debounce.component';
+import { ElementAtComponent } from './components/operators/element-at/element-at.component';
 
 const routes: Routes = [
   {
@@ -125,6 +126,10 @@ const routes: Routes = [
       {
         path: 'debounce',
         component: DebounceComponent,
+      },
+      {
+        path: 'elementAt',
+        component: ElementAtComponent,
       },
     ],
   },
