@@ -29,6 +29,7 @@ import { AuditComponent } from './components/operators/audit/audit.component';
 import { ThrottleComponent } from './components/operators/throttle/throttle.component';
 import { FirstComponent } from './components/operators/first/first.component';
 import { LastComponent } from './components/operators/last/last.component';
+import { DebounceComponent } from './components/operators/debounce/debounce.component';
 
 @NgModule({
   declarations: [
@@ -59,6 +60,7 @@ import { LastComponent } from './components/operators/last/last.component';
     ThrottleComponent,
     FirstComponent,
     LastComponent,
+    DebounceComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
