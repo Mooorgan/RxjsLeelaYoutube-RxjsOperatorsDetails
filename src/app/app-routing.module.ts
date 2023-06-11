@@ -22,6 +22,7 @@ import { SampleComponent } from './components/operators/sample/sample.component'
 import { AuditComponent } from './components/operators/audit/audit.component';
 import { ThrottleComponent } from './components/operators/throttle/throttle.component';
 import { FirstComponent } from './components/operators/first/first.component';
+import { LastComponent } from './components/operators/last/last.component';
 
 const routes: Routes = [
   {
@@ -115,6 +116,10 @@ const routes: Routes = [
       {
         path: 'first',
         component: FirstComponent,
+      },
+      {
+        path: 'last',
+        component: LastComponent,
       },
     ],
   },

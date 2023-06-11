@@ -28,6 +28,7 @@ import { SampleComponent } from './components/operators/sample/sample.component'
 import { AuditComponent } from './components/operators/audit/audit.component';
 import { ThrottleComponent } from './components/operators/throttle/throttle.component';
 import { FirstComponent } from './components/operators/first/first.component';
+import { LastComponent } from './components/operators/last/last.component';
 
 @NgModule({
   declarations: [
@@ -57,6 +58,7 @@ import { FirstComponent } from './components/operators/first/first.component';
     AuditComponent,
     ThrottleComponent,
     FirstComponent,
+    LastComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
