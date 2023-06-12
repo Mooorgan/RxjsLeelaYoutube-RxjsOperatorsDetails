@@ -30,6 +30,7 @@ import { SingleComponent } from './components/operators/single/single.component'
 import { MapComponent } from './components/operators/map/map.component';
 import { AjaxComponent } from './components/operators/ajax/ajax.component';
 import { MergeMapComponent } from './components/operators/merge-map/merge-map.component';
+import { ConcatMapComponent } from './components/operators/concat-map/concat-map.component';
 
 const routes: Routes = [
   {
@@ -155,6 +156,10 @@ const routes: Routes = [
       {
         path: 'mergeMap',
         component: MergeMapComponent,
+      },
+      {
+        path: 'concatMap',
+        component: ConcatMapComponent,
       },
     ],
   },

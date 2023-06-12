@@ -36,6 +36,7 @@ import { SingleComponent } from './components/operators/single/single.component'
 import { MapComponent } from './components/operators/map/map.component';
 import { AjaxComponent } from './components/operators/ajax/ajax.component';
 import { MergeMapComponent } from './components/operators/merge-map/merge-map.component';
+import { ConcatMapComponent } from './components/operators/concat-map/concat-map.component';
 
 @NgModule({
   declarations: [
@@ -73,6 +74,7 @@ import { MergeMapComponent } from './components/operators/merge-map/merge-map.co
     MapComponent,
     AjaxComponent,
     MergeMapComponent,
+    ConcatMapComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
