@@ -28,6 +28,7 @@ import { ElementAtComponent } from './components/operators/element-at/element-at
 import { IgnoreElementsComponent } from './components/operators/ignore-elements/ignore-elements.component';
 import { SingleComponent } from './components/operators/single/single.component';
 import { MapComponent } from './components/operators/map/map.component';
+import { AjaxComponent } from './components/operators/ajax/ajax.component';
 
 const routes: Routes = [
   {
@@ -145,6 +146,10 @@ const routes: Routes = [
       {
         path: 'map',
         component: MapComponent,
+      },
+      {
+        path: 'ajax',
+        component: AjaxComponent,
       },
     ],
   },
