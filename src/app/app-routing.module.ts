@@ -32,6 +32,7 @@ import { AjaxComponent } from './components/operators/ajax/ajax.component';
 import { MergeMapComponent } from './components/operators/merge-map/merge-map.component';
 import { ConcatMapComponent } from './components/operators/concat-map/concat-map.component';
 import { ExhaustMapComponent } from './components/operators/exhaust-map/exhaust-map.component';
+import { SwitchMapComponent } from './components/operators/switch-map/switch-map.component';
 
 const routes: Routes = [
   {
@@ -165,6 +166,10 @@ const routes: Routes = [
       {
         path: 'exhaustMap',
         component: ExhaustMapComponent,
+      },
+      {
+        path: 'switchMap',
+        component: SwitchMapComponent,
       },
     ],
   },
