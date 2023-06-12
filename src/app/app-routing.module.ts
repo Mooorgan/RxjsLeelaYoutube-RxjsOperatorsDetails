@@ -31,6 +31,7 @@ import { MapComponent } from './components/operators/map/map.component';
 import { AjaxComponent } from './components/operators/ajax/ajax.component';
 import { MergeMapComponent } from './components/operators/merge-map/merge-map.component';
 import { ConcatMapComponent } from './components/operators/concat-map/concat-map.component';
+import { ExhaustMapComponent } from './components/operators/exhaust-map/exhaust-map.component';
 
 const routes: Routes = [
   {
@@ -160,6 +161,10 @@ const routes: Routes = [
       {
         path: 'concatMap',
         component: ConcatMapComponent,
+      },
+      {
+        path: 'exhaustMap',
+        component: ExhaustMapComponent,
       },
     ],
   },
