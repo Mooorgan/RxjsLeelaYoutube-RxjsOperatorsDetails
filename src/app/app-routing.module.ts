@@ -34,6 +34,7 @@ import { ConcatMapComponent } from './components/operators/concat-map/concat-map
 import { ExhaustMapComponent } from './components/operators/exhaust-map/exhaust-map.component';
 import { SwitchMapComponent } from './components/operators/switch-map/switch-map.component';
 import { SubjectComponent } from './components/subject/subject.component';
+import { ColdObservableComponent } from './components/cold-observable/cold-observable.component';
 
 const routes: Routes = [
   {
@@ -177,6 +178,10 @@ const routes: Routes = [
   {
     path: 'subject',
     component: SubjectComponent,
+  },
+  {
+    path: 'coldObservable',
+    component: ColdObservableComponent,
   },
 ];
 
