@@ -42,6 +42,7 @@ import { SwitchMapComponent } from './components/operators/switch-map/switch-map
 import { SubjectComponent } from './components/subject/subject.component';
 import { ColdObservableComponent } from './components/cold-observable/cold-observable.component';
 import { ConnectableComponent } from './components/connectable/connectable.component';
+import { ShareComponent } from './components/operators/share/share.component';
 
 @NgModule({
   declarations: [
@@ -85,6 +86,7 @@ import { ConnectableComponent } from './components/connectable/connectable.compo
     SubjectComponent,
     ColdObservableComponent,
     ConnectableComponent,
+    ShareComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
