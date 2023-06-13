@@ -41,6 +41,7 @@ import { ExhaustMapComponent } from './components/operators/exhaust-map/exhaust-
 import { SwitchMapComponent } from './components/operators/switch-map/switch-map.component';
 import { SubjectComponent } from './components/subject/subject.component';
 import { ColdObservableComponent } from './components/cold-observable/cold-observable.component';
+import { ConnectableComponent } from './components/connectable/connectable.component';
 
 @NgModule({
   declarations: [
@@ -83,6 +84,7 @@ import { ColdObservableComponent } from './components/cold-observable/cold-obser
     SwitchMapComponent,
     SubjectComponent,
     ColdObservableComponent,
+    ConnectableComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

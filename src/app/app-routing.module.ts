@@ -35,6 +35,7 @@ import { ExhaustMapComponent } from './components/operators/exhaust-map/exhaust-
 import { SwitchMapComponent } from './components/operators/switch-map/switch-map.component';
 import { SubjectComponent } from './components/subject/subject.component';
 import { ColdObservableComponent } from './components/cold-observable/cold-observable.component';
+import { ConnectableComponent } from './components/connectable/connectable.component';
 
 const routes: Routes = [
   {
@@ -182,6 +183,10 @@ const routes: Routes = [
   {
     path: 'coldObservable',
     component: ColdObservableComponent,
+  },
+  {
+    path: 'connectable',
+    component: ConnectableComponent,
   },
 ];
 

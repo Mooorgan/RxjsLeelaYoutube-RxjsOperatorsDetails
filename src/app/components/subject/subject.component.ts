@@ -32,7 +32,7 @@ export class SubjectComponent implements OnInit, OnDestroy {
       },
     };
     let observer2 = {
-      next(value: number) {
+      next: (value: number) => {
         console.log(`Observer2: ${value}`);
       },
       error(err: any) {
