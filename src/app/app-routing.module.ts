@@ -33,10 +33,11 @@ import { MergeMapComponent } from './components/operators/merge-map/merge-map.co
 import { ConcatMapComponent } from './components/operators/concat-map/concat-map.component';
 import { ExhaustMapComponent } from './components/operators/exhaust-map/exhaust-map.component';
 import { SwitchMapComponent } from './components/operators/switch-map/switch-map.component';
+import { SubjectComponent } from './components/subject/subject.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'operators',
     component: OperatorsComponent,
     children: [
       {
@@ -172,6 +173,10 @@ const routes: Routes = [
         component: SwitchMapComponent,
       },
     ],
+  },
+  {
+    path: 'subject',
+    component: SubjectComponent,
   },
 ];
 

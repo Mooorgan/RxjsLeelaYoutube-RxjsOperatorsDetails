@@ -1,5 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import {
+  Subject,
   Subscription,
   exhaustMap,
   filter,
@@ -38,6 +39,16 @@ export class SwitchMapComponent implements OnInit, OnDestroy {
       .subscribe((data) => {
         console.log(data);
       });
+
+    // const subject = new Subject<number>();
+
+    // subject.next(10);
+    // subject.subscribe((value) => {
+    //   console.log(value);
+    // });
+
+    // subject.next(20);
+    // subject.next(30);
   }
 
   ngOnDestroy(): void {
