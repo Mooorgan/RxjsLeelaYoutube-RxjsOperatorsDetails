@@ -1,18 +1,18 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { BehaviorSubject, Subscription, connectable, interval } from 'rxjs';
+import { AsyncSubject, Subscription, connectable, interval, take } from 'rxjs';
 
 @Component({
-  selector: 'app-connectable-behavior',
-  templateUrl: './connectable-behavior.component.html',
-  styleUrls: ['./connectable-behavior.component.scss'],
+  selector: 'app-connectable-async',
+  templateUrl: './connectable-async.component.html',
+  styleUrls: ['./connectable-async.component.scss'],
 })
-export class ConnectableBehaviorComponent implements OnInit, OnDestroy {
+export class ConnectableAsyncComponent implements OnInit, OnDestroy {
   subscription1!: Subscription;
   subscription2!: Subscription;
 
   ngOnInit(): void {
-    const source$ = connectable(interval(1000), {
-      connector: () => new BehaviorSubject(100),
+    const source$ = connectable(interval(1000).pipe(take(5)), {
+      connector: () => new AsyncSubject(),
     });
 
     this.subscription1 = source$.subscribe((data) => {
