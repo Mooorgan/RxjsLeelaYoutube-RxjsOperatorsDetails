@@ -40,6 +40,7 @@ import { ShareComponent } from './components/operators/share/share.component';
 import { BehaviorSubjectComponent } from './components/behavior-subject/behavior-subject.component';
 import { ReplaySubjectComponent } from './components/replay-subject/replay-subject.component';
 import { AsyncSubjectComponent } from './components/async-subject/async-subject.component';
+import { VoidSubjectComponent } from './components/void-subject/void-subject.component';
 
 const routes: Routes = [
   {
@@ -207,6 +208,10 @@ const routes: Routes = [
   {
     path: 'asyncSubject',
     component: AsyncSubjectComponent,
+  },
+  {
+    path: 'voidSubject',
+    component: VoidSubjectComponent,
   },
 ];
 
