@@ -43,6 +43,7 @@ import { AsyncSubjectComponent } from './components/async-subject/async-subject.
 import { VoidSubjectComponent } from './components/void-subject/void-subject.component';
 import { ConnectableBehaviorComponent } from './components/operators/connectable-behavior/connectable-behavior.component';
 import { ConnectableAsyncComponent } from './components/operators/connectable-async/connectable-async.component';
+import { ConnectableReplayComponent } from './components/operators/connectable-replay/connectable-replay.component';
 
 const routes: Routes = [
   {
@@ -192,6 +193,10 @@ const routes: Routes = [
       {
         path: 'connectable-async',
         component: ConnectableAsyncComponent,
+      },
+      {
+        path: 'connectable-replay',
+        component: ConnectableReplayComponent,
       },
     ],
   },
