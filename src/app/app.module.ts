@@ -45,6 +45,7 @@ import { ConnectableComponent } from './components/connectable/connectable.compo
 import { ShareComponent } from './components/operators/share/share.component';
 import { BehaviorSubjectComponent } from './components/behavior-subject/behavior-subject.component';
 import { ReplaySubjectComponent } from './components/replay-subject/replay-subject.component';
+import { AsyncSubjectComponent } from './components/async-subject/async-subject.component';
 
 @NgModule({
   declarations: [
@@ -91,6 +92,7 @@ import { ReplaySubjectComponent } from './components/replay-subject/replay-subje
     ShareComponent,
     BehaviorSubjectComponent,
     ReplaySubjectComponent,
+    AsyncSubjectComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
