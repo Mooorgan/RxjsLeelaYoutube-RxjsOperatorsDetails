@@ -47,6 +47,7 @@ import { BehaviorSubjectComponent } from './components/behavior-subject/behavior
 import { ReplaySubjectComponent } from './components/replay-subject/replay-subject.component';
 import { AsyncSubjectComponent } from './components/async-subject/async-subject.component';
 import { VoidSubjectComponent } from './components/void-subject/void-subject.component';
+import { ConnectableBehaviorComponent } from './components/operators/connectable-behavior/connectable-behavior.component';
 
 @NgModule({
   declarations: [
@@ -95,6 +96,7 @@ import { VoidSubjectComponent } from './components/void-subject/void-subject.com
     ReplaySubjectComponent,
     AsyncSubjectComponent,
     VoidSubjectComponent,
+    ConnectableBehaviorComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
