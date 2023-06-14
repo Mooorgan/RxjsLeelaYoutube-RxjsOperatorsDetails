@@ -37,6 +37,7 @@ import { SubjectComponent } from './components/subject/subject.component';
 import { ColdObservableComponent } from './components/cold-observable/cold-observable.component';
 import { ConnectableComponent } from './components/connectable/connectable.component';
 import { ShareComponent } from './components/operators/share/share.component';
+import { BehaviorSubjectComponent } from './components/behavior-subject/behavior-subject.component';
 
 const routes: Routes = [
   {
@@ -192,6 +193,10 @@ const routes: Routes = [
   {
     path: 'connectable',
     component: ConnectableComponent,
+  },
+  {
+    path: 'behaviorSubject',
+    component: BehaviorSubjectComponent,
   },
 ];
 
