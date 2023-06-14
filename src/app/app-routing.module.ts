@@ -38,6 +38,7 @@ import { ColdObservableComponent } from './components/cold-observable/cold-obser
 import { ConnectableComponent } from './components/connectable/connectable.component';
 import { ShareComponent } from './components/operators/share/share.component';
 import { BehaviorSubjectComponent } from './components/behavior-subject/behavior-subject.component';
+import { ReplaySubjectComponent } from './components/replay-subject/replay-subject.component';
 
 const routes: Routes = [
   {
@@ -197,6 +198,10 @@ const routes: Routes = [
   {
     path: 'behaviorSubject',
     component: BehaviorSubjectComponent,
+  },
+  {
+    path: 'replaySubject',
+    component: ReplaySubjectComponent,
   },
 ];
 

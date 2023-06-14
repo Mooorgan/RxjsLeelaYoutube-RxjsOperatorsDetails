@@ -17,6 +17,7 @@ export class BehaviorSubjectComponent implements OnInit, OnDestroy {
     });
 
     behaviorSubject$.next(1);
+    // behaviorSubject$.error('Error occurred in behavior Subject');
 
     this.subscription2 = behaviorSubject$.subscribe((data) => {
       console.log(`Observer 2: ${data}`);
