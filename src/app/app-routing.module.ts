@@ -50,6 +50,7 @@ import { RetryWithRetryConfigComponent } from './components/operators/retry-with
 import { CombineLatestFunctionComponent } from './components/operators/combine-latest-function/combine-latest-function.component';
 import { ConcatFunctionComponent } from './components/operators/concat-function/concat-function.component';
 import { ForkJoinFunctionComponent } from './components/operators/fork-join-function/fork-join-function.component';
+import { MergeFunctionComponent } from './components/operators/merge-function/merge-function.component';
 
 const routes: Routes = [
   {
@@ -227,6 +228,10 @@ const routes: Routes = [
       {
         path: 'forkJoin',
         component: ForkJoinFunctionComponent,
+      },
+      {
+        path: 'merge',
+        component: MergeFunctionComponent,
       },
     ],
   },

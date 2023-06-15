@@ -56,6 +56,7 @@ import { RetryWithRetryConfigComponent } from './components/operators/retry-with
 import { CombineLatestFunctionComponent } from './components/operators/combine-latest-function/combine-latest-function.component';
 import { ConcatFunctionComponent } from './components/operators/concat-function/concat-function.component';
 import { ForkJoinFunctionComponent } from './components/operators/fork-join-function/fork-join-function.component';
+import { MergeFunctionComponent } from './components/operators/merge-function/merge-function.component';
 
 @NgModule({
   declarations: [
@@ -113,6 +114,7 @@ import { ForkJoinFunctionComponent } from './components/operators/fork-join-func
     CombineLatestFunctionComponent,
     ConcatFunctionComponent,
     ForkJoinFunctionComponent,
+    MergeFunctionComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
