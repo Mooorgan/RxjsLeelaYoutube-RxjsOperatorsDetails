@@ -53,6 +53,7 @@ import { ConnectableReplayComponent } from './components/operators/connectable-r
 import { CatchErrorComponent } from './components/operators/catch-error/catch-error.component';
 import { RetryComponent } from './components/operators/retry/retry.component';
 import { RetryWithRetryConfigComponent } from './components/operators/retry-with-retry-config/retry-with-retry-config.component';
+import { CombineLatestFunctionComponent } from './components/operators/combine-latest-function/combine-latest-function.component';
 
 @NgModule({
   declarations: [
@@ -107,6 +108,7 @@ import { RetryWithRetryConfigComponent } from './components/operators/retry-with
     CatchErrorComponent,
     RetryComponent,
     RetryWithRetryConfigComponent,
+    CombineLatestFunctionComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
