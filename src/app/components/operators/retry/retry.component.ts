@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Observable, Subscription, catchError, of, retry, take } from 'rxjs';
 
 @Component({
@@ -6,7 +6,7 @@ import { Observable, Subscription, catchError, of, retry, take } from 'rxjs';
   templateUrl: './retry.component.html',
   styleUrls: ['./retry.component.scss'],
 })
-export class RetryComponent {
+export class RetryComponent implements OnInit, OnDestroy {
   subscription!: Subscription;
 
   ngOnInit(): void {

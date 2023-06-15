@@ -46,6 +46,7 @@ import { ConnectableAsyncComponent } from './components/operators/connectable-as
 import { ConnectableReplayComponent } from './components/operators/connectable-replay/connectable-replay.component';
 import { CatchErrorComponent } from './components/operators/catch-error/catch-error.component';
 import { RetryComponent } from './components/operators/retry/retry.component';
+import { RetryWithRetryConfigComponent } from './components/operators/retry-with-retry-config/retry-with-retry-config.component';
 
 const routes: Routes = [
   {
@@ -207,6 +208,10 @@ const routes: Routes = [
       {
         path: 'retry',
         component: RetryComponent,
+      },
+      {
+        path: 'retry-withRetryConfig',
+        component: RetryWithRetryConfigComponent,
       },
     ],
   },

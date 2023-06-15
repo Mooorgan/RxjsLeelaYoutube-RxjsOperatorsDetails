@@ -52,6 +52,7 @@ import { ConnectableAsyncComponent } from './components/operators/connectable-as
 import { ConnectableReplayComponent } from './components/operators/connectable-replay/connectable-replay.component';
 import { CatchErrorComponent } from './components/operators/catch-error/catch-error.component';
 import { RetryComponent } from './components/operators/retry/retry.component';
+import { RetryWithRetryConfigComponent } from './components/operators/retry-with-retry-config/retry-with-retry-config.component';
 
 @NgModule({
   declarations: [
@@ -105,6 +106,7 @@ import { RetryComponent } from './components/operators/retry/retry.component';
     ConnectableReplayComponent,
     CatchErrorComponent,
     RetryComponent,
+    RetryWithRetryConfigComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
