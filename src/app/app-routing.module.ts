@@ -51,6 +51,7 @@ import { CombineLatestFunctionComponent } from './components/operators/combine-l
 import { ConcatFunctionComponent } from './components/operators/concat-function/concat-function.component';
 import { ForkJoinFunctionComponent } from './components/operators/fork-join-function/fork-join-function.component';
 import { MergeFunctionComponent } from './components/operators/merge-function/merge-function.component';
+import { PartitionFunctionComponent } from './components/operators/partition-function/partition-function.component';
 
 const routes: Routes = [
   {
@@ -232,6 +233,10 @@ const routes: Routes = [
       {
         path: 'merge',
         component: MergeFunctionComponent,
+      },
+      {
+        path: 'partition',
+        component: PartitionFunctionComponent,
       },
     ],
   },
