@@ -54,6 +54,7 @@ import { CatchErrorComponent } from './components/operators/catch-error/catch-er
 import { RetryComponent } from './components/operators/retry/retry.component';
 import { RetryWithRetryConfigComponent } from './components/operators/retry-with-retry-config/retry-with-retry-config.component';
 import { CombineLatestFunctionComponent } from './components/operators/combine-latest-function/combine-latest-function.component';
+import { ConcatFunctionComponent } from './components/operators/concat-function/concat-function.component';
 
 @NgModule({
   declarations: [
@@ -109,6 +110,7 @@ import { CombineLatestFunctionComponent } from './components/operators/combine-l
     RetryComponent,
     RetryWithRetryConfigComponent,
     CombineLatestFunctionComponent,
+    ConcatFunctionComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
