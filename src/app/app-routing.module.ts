@@ -44,6 +44,7 @@ import { VoidSubjectComponent } from './components/void-subject/void-subject.com
 import { ConnectableBehaviorComponent } from './components/operators/connectable-behavior/connectable-behavior.component';
 import { ConnectableAsyncComponent } from './components/operators/connectable-async/connectable-async.component';
 import { ConnectableReplayComponent } from './components/operators/connectable-replay/connectable-replay.component';
+import { CatchErrorComponent } from './components/operators/catch-error/catch-error.component';
 
 const routes: Routes = [
   {
@@ -197,6 +198,10 @@ const routes: Routes = [
       {
         path: 'connectable-replay',
         component: ConnectableReplayComponent,
+      },
+      {
+        path: 'catchError',
+        component: CatchErrorComponent,
       },
     ],
   },
