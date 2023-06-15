@@ -51,6 +51,7 @@ import { ConnectableBehaviorComponent } from './components/operators/connectable
 import { ConnectableAsyncComponent } from './components/operators/connectable-async/connectable-async.component';
 import { ConnectableReplayComponent } from './components/operators/connectable-replay/connectable-replay.component';
 import { CatchErrorComponent } from './components/operators/catch-error/catch-error.component';
+import { RetryComponent } from './components/operators/retry/retry.component';
 
 @NgModule({
   declarations: [
@@ -103,6 +104,7 @@ import { CatchErrorComponent } from './components/operators/catch-error/catch-er
     ConnectableAsyncComponent,
     ConnectableReplayComponent,
     CatchErrorComponent,
+    RetryComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

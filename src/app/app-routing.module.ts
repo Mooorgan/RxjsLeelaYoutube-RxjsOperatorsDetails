@@ -45,6 +45,7 @@ import { ConnectableBehaviorComponent } from './components/operators/connectable
 import { ConnectableAsyncComponent } from './components/operators/connectable-async/connectable-async.component';
 import { ConnectableReplayComponent } from './components/operators/connectable-replay/connectable-replay.component';
 import { CatchErrorComponent } from './components/operators/catch-error/catch-error.component';
+import { RetryComponent } from './components/operators/retry/retry.component';
 
 const routes: Routes = [
   {
@@ -202,6 +203,10 @@ const routes: Routes = [
       {
         path: 'catchError',
         component: CatchErrorComponent,
+      },
+      {
+        path: 'retry',
+        component: RetryComponent,
       },
     ],
   },
