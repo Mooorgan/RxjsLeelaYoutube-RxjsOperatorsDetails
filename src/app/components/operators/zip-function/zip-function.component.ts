@@ -25,7 +25,10 @@ export class ZipFunctionComponent {
     });
 
     const source3$ = of(1, 2, 3, 4, 5, 6);
-    this.subscription = zip(source1$, source2$, source3$).subscribe({
+    // this.subscription = zip(source1$, source2$, source3$).subscribe({
+    this.subscription = zip([source1$, source2$, source3$], (a, b, c) => {
+      return `${a},${b},${c}`;
+    }).subscribe({
       next: console.log,
       error: (err) => {
         console.log(`Error is ${err}`);
