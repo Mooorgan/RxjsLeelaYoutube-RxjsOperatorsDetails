@@ -65,6 +65,7 @@ import { DeferFunctionComponent } from './components/operators/defer-function/de
 import { RangeFunctionComponent } from './components/operators/range-function/range-function.component';
 import { GenerateFunctionComponent } from './components/operators/generate-function/generate-function.component';
 import { TimerFunctionComponent } from './components/operators/timer-function/timer-function.component';
+import { CountOperatorComponent } from './components/operators/count-operator/count-operator.component';
 
 @NgModule({
   declarations: [
@@ -131,6 +132,7 @@ import { TimerFunctionComponent } from './components/operators/timer-function/ti
     RangeFunctionComponent,
     GenerateFunctionComponent,
     TimerFunctionComponent,
+    CountOperatorComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

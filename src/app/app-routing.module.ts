@@ -59,6 +59,7 @@ import { DeferFunctionComponent } from './components/operators/defer-function/de
 import { RangeFunctionComponent } from './components/operators/range-function/range-function.component';
 import { GenerateFunctionComponent } from './components/operators/generate-function/generate-function.component';
 import { TimerFunctionComponent } from './components/operators/timer-function/timer-function.component';
+import { CountOperatorComponent } from './components/operators/count-operator/count-operator.component';
 
 const routes: Routes = [
   {
@@ -272,6 +273,10 @@ const routes: Routes = [
       {
         path: 'timer',
         component: TimerFunctionComponent,
+      },
+      {
+        path: 'count',
+        component: CountOperatorComponent,
       },
     ],
   },
