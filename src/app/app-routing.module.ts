@@ -53,6 +53,7 @@ import { ForkJoinFunctionComponent } from './components/operators/fork-join-func
 import { MergeFunctionComponent } from './components/operators/merge-function/merge-function.component';
 import { PartitionFunctionComponent } from './components/operators/partition-function/partition-function.component';
 import { RaceOperatorComponent } from './components/operators/race-operator/race-operator.component';
+import { ZipFunctionComponent } from './components/operators/zip-function/zip-function.component';
 
 const routes: Routes = [
   {
@@ -242,6 +243,10 @@ const routes: Routes = [
       {
         path: 'race',
         component: RaceOperatorComponent,
+      },
+      {
+        path: 'zip',
+        component: ZipFunctionComponent,
       },
     ],
   },
