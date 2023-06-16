@@ -61,6 +61,7 @@ import { GenerateFunctionComponent } from './components/operators/generate-funct
 import { TimerFunctionComponent } from './components/operators/timer-function/timer-function.component';
 import { CountOperatorComponent } from './components/operators/count-operator/count-operator.component';
 import { MaxOperatorComponent } from './components/operators/max-operator/max-operator.component';
+import { MinOperatorComponent } from './components/operators/min-operator/min-operator.component';
 
 const routes: Routes = [
   {
@@ -282,6 +283,10 @@ const routes: Routes = [
       {
         path: 'max',
         component: MaxOperatorComponent,
+      },
+      {
+        path: 'min',
+        component: MinOperatorComponent,
       },
     ],
   },
