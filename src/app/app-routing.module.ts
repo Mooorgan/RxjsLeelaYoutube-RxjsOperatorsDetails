@@ -56,6 +56,7 @@ import { RaceOperatorComponent } from './components/operators/race-operator/race
 import { ZipFunctionComponent } from './components/operators/zip-function/zip-function.component';
 import { ScheduledFunctionComponent } from './components/operators/scheduled-function/scheduled-function.component';
 import { DeferFunctionComponent } from './components/operators/defer-function/defer-function.component';
+import { RangeFunctionComponent } from './components/operators/range-function/range-function.component';
 
 const routes: Routes = [
   {
@@ -257,6 +258,10 @@ const routes: Routes = [
       {
         path: 'defer',
         component: DeferFunctionComponent,
+      },
+      {
+        path: 'range',
+        component: RangeFunctionComponent,
       },
     ],
   },
