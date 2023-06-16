@@ -63,6 +63,7 @@ import { ZipFunctionComponent } from './components/operators/zip-function/zip-fu
 import { ScheduledFunctionComponent } from './components/operators/scheduled-function/scheduled-function.component';
 import { DeferFunctionComponent } from './components/operators/defer-function/defer-function.component';
 import { RangeFunctionComponent } from './components/operators/range-function/range-function.component';
+import { GenerateFunctionComponent } from './components/operators/generate-function/generate-function.component';
 
 @NgModule({
   declarations: [
@@ -127,6 +128,7 @@ import { RangeFunctionComponent } from './components/operators/range-function/ra
     ScheduledFunctionComponent,
     DeferFunctionComponent,
     RangeFunctionComponent,
+    GenerateFunctionComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
