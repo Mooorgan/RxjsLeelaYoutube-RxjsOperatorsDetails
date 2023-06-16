@@ -66,6 +66,7 @@ import { RangeFunctionComponent } from './components/operators/range-function/ra
 import { GenerateFunctionComponent } from './components/operators/generate-function/generate-function.component';
 import { TimerFunctionComponent } from './components/operators/timer-function/timer-function.component';
 import { CountOperatorComponent } from './components/operators/count-operator/count-operator.component';
+import { MaxOperatorComponent } from './components/operators/max-operator/max-operator.component';
 
 @NgModule({
   declarations: [
@@ -133,6 +134,7 @@ import { CountOperatorComponent } from './components/operators/count-operator/co
     GenerateFunctionComponent,
     TimerFunctionComponent,
     CountOperatorComponent,
+    MaxOperatorComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
