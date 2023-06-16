@@ -9,12 +9,13 @@ import { Subscription, min, of } from 'rxjs';
 export class MinOperatorComponent implements OnInit, OnDestroy {
   subscription1!: Subscription;
   subscription2!: Subscription;
+
   ngOnInit(): void {
     const source$ = of(1, 2, 3, 4, 5, 6);
     this.subscription1 = source$.pipe(min()).subscribe(console.log);
 
     const person = [
-      { name: 'Leela', age: 20 },
+      { name: 'Leela Singh', age: 20 },
       { name: 'Cherry', age: 4 },
       { name: 'Luti', age: 2 },
     ];
