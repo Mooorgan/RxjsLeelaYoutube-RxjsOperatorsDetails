@@ -54,6 +54,7 @@ import { MergeFunctionComponent } from './components/operators/merge-function/me
 import { PartitionFunctionComponent } from './components/operators/partition-function/partition-function.component';
 import { RaceOperatorComponent } from './components/operators/race-operator/race-operator.component';
 import { ZipFunctionComponent } from './components/operators/zip-function/zip-function.component';
+import { ScheduledFunctionComponent } from './components/operators/scheduled-function/scheduled-function.component';
 
 const routes: Routes = [
   {
@@ -247,6 +248,10 @@ const routes: Routes = [
       {
         path: 'zip',
         component: ZipFunctionComponent,
+      },
+      {
+        path: 'scheduled',
+        component: ScheduledFunctionComponent,
       },
     ],
   },

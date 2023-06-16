@@ -60,6 +60,7 @@ import { MergeFunctionComponent } from './components/operators/merge-function/me
 import { PartitionFunctionComponent } from './components/operators/partition-function/partition-function.component';
 import { RaceOperatorComponent } from './components/operators/race-operator/race-operator.component';
 import { ZipFunctionComponent } from './components/operators/zip-function/zip-function.component';
+import { ScheduledFunctionComponent } from './components/operators/scheduled-function/scheduled-function.component';
 
 @NgModule({
   declarations: [
@@ -121,6 +122,7 @@ import { ZipFunctionComponent } from './components/operators/zip-function/zip-fu
     PartitionFunctionComponent,
     RaceOperatorComponent,
     ZipFunctionComponent,
+    ScheduledFunctionComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
