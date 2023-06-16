@@ -55,6 +55,7 @@ import { PartitionFunctionComponent } from './components/operators/partition-fun
 import { RaceOperatorComponent } from './components/operators/race-operator/race-operator.component';
 import { ZipFunctionComponent } from './components/operators/zip-function/zip-function.component';
 import { ScheduledFunctionComponent } from './components/operators/scheduled-function/scheduled-function.component';
+import { DeferFunctionComponent } from './components/operators/defer-function/defer-function.component';
 
 const routes: Routes = [
   {
@@ -252,6 +253,10 @@ const routes: Routes = [
       {
         path: 'scheduled',
         component: ScheduledFunctionComponent,
+      },
+      {
+        path: 'defer',
+        component: DeferFunctionComponent,
       },
     ],
   },
