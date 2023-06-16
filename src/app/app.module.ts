@@ -64,6 +64,7 @@ import { ScheduledFunctionComponent } from './components/operators/scheduled-fun
 import { DeferFunctionComponent } from './components/operators/defer-function/defer-function.component';
 import { RangeFunctionComponent } from './components/operators/range-function/range-function.component';
 import { GenerateFunctionComponent } from './components/operators/generate-function/generate-function.component';
+import { TimerFunctionComponent } from './components/operators/timer-function/timer-function.component';
 
 @NgModule({
   declarations: [
@@ -129,6 +130,7 @@ import { GenerateFunctionComponent } from './components/operators/generate-funct
     DeferFunctionComponent,
     RangeFunctionComponent,
     GenerateFunctionComponent,
+    TimerFunctionComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

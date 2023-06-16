@@ -58,6 +58,7 @@ import { ScheduledFunctionComponent } from './components/operators/scheduled-fun
 import { DeferFunctionComponent } from './components/operators/defer-function/defer-function.component';
 import { RangeFunctionComponent } from './components/operators/range-function/range-function.component';
 import { GenerateFunctionComponent } from './components/operators/generate-function/generate-function.component';
+import { TimerFunctionComponent } from './components/operators/timer-function/timer-function.component';
 
 const routes: Routes = [
   {
@@ -267,6 +268,10 @@ const routes: Routes = [
       {
         path: 'generate',
         component: GenerateFunctionComponent,
+      },
+      {
+        path: 'timer',
+        component: TimerFunctionComponent,
       },
     ],
   },
