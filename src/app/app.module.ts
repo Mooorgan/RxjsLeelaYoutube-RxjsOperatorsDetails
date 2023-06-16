@@ -58,6 +58,7 @@ import { ConcatFunctionComponent } from './components/operators/concat-function/
 import { ForkJoinFunctionComponent } from './components/operators/fork-join-function/fork-join-function.component';
 import { MergeFunctionComponent } from './components/operators/merge-function/merge-function.component';
 import { PartitionFunctionComponent } from './components/operators/partition-function/partition-function.component';
+import { RaceOperatorComponent } from './components/operators/race-operator/race-operator.component';
 
 @NgModule({
   declarations: [
@@ -117,6 +118,7 @@ import { PartitionFunctionComponent } from './components/operators/partition-fun
     ForkJoinFunctionComponent,
     MergeFunctionComponent,
     PartitionFunctionComponent,
+    RaceOperatorComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

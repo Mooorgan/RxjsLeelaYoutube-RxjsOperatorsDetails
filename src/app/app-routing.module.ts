@@ -52,6 +52,7 @@ import { ConcatFunctionComponent } from './components/operators/concat-function/
 import { ForkJoinFunctionComponent } from './components/operators/fork-join-function/fork-join-function.component';
 import { MergeFunctionComponent } from './components/operators/merge-function/merge-function.component';
 import { PartitionFunctionComponent } from './components/operators/partition-function/partition-function.component';
+import { RaceOperatorComponent } from './components/operators/race-operator/race-operator.component';
 
 const routes: Routes = [
   {
@@ -237,6 +238,10 @@ const routes: Routes = [
       {
         path: 'partition',
         component: PartitionFunctionComponent,
+      },
+      {
+        path: 'race',
+        component: RaceOperatorComponent,
       },
     ],
   },
