@@ -78,6 +78,7 @@ import { DefaultIfEmptyOperatorComponent } from './components/operators/default-
 import { ToArrayOperatorComponent } from './components/operators/to-array-operator/to-array-operator.component';
 import { SubscribeOnOperatorComponent } from './components/operators/subscribe-on-operator/subscribe-on-operator.component';
 import { ObserveOnOperatorComponent } from './components/operators/observe-on-operator/observe-on-operator.component';
+import { MaterializeOperatorComponent } from './components/operators/materialize-operator/materialize-operator.component';
 
 @NgModule({
   declarations: [
@@ -157,6 +158,7 @@ import { ObserveOnOperatorComponent } from './components/operators/observe-on-op
     ToArrayOperatorComponent,
     SubscribeOnOperatorComponent,
     ObserveOnOperatorComponent,
+    MaterializeOperatorComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

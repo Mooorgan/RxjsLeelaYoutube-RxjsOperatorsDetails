@@ -72,6 +72,7 @@ import { DefaultIfEmptyOperatorComponent } from './components/operators/default-
 import { ToArrayOperatorComponent } from './components/operators/to-array-operator/to-array-operator.component';
 import { ObserveOnOperatorComponent } from './components/operators/observe-on-operator/observe-on-operator.component';
 import { SubscribeOnOperatorComponent } from './components/operators/subscribe-on-operator/subscribe-on-operator.component';
+import { MaterializeOperatorComponent } from './components/operators/materialize-operator/materialize-operator.component';
 
 const routes: Routes = [
   {
@@ -337,6 +338,10 @@ const routes: Routes = [
       {
         path: 'observeOn',
         component: ObserveOnOperatorComponent,
+      },
+      {
+        path: 'materialize',
+        component: MaterializeOperatorComponent,
       },
     ],
   },
