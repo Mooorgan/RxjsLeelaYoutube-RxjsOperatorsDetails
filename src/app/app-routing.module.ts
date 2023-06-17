@@ -68,6 +68,7 @@ import { FindIndexOperatorComponent } from './components/operators/find-index-op
 import { FindOperatorComponent } from './components/operators/find-operator/find-operator.component';
 import { EveryOperatorComponent } from './components/operators/every-operator/every-operator.component';
 import { ScanOperatorComponent } from './components/operators/scan-operator/scan-operator.component';
+import { DefaultIfEmptyOperatorComponent } from './components/operators/default-if-empty-operator/default-if-empty-operator.component';
 
 const routes: Routes = [
   {
@@ -317,6 +318,10 @@ const routes: Routes = [
       {
         path: 'scan',
         component: ScanOperatorComponent,
+      },
+      {
+        path: 'defaultIfEmpty',
+        component: DefaultIfEmptyOperatorComponent,
       },
     ],
   },
