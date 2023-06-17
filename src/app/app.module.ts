@@ -69,6 +69,7 @@ import { CountOperatorComponent } from './components/operators/count-operator/co
 import { MaxOperatorComponent } from './components/operators/max-operator/max-operator.component';
 import { MinOperatorComponent } from './components/operators/min-operator/min-operator.component';
 import { ReduceOperatorComponent } from './components/operators/reduce-operator/reduce-operator.component';
+import { IsEmptyOperatorComponent } from './components/operators/is-empty-operator/is-empty-operator.component';
 
 @NgModule({
   declarations: [
@@ -139,6 +140,7 @@ import { ReduceOperatorComponent } from './components/operators/reduce-operator/
     MaxOperatorComponent,
     MinOperatorComponent,
     ReduceOperatorComponent,
+    IsEmptyOperatorComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
