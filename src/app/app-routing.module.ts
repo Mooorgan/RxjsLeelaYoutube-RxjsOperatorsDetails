@@ -74,6 +74,7 @@ import { ObserveOnOperatorComponent } from './components/operators/observe-on-op
 import { SubscribeOnOperatorComponent } from './components/operators/subscribe-on-operator/subscribe-on-operator.component';
 import { MaterializeOperatorComponent } from './components/operators/materialize-operator/materialize-operator.component';
 import { DematerializeOperatorComponent } from './components/operators/dematerialize-operator/dematerialize-operator.component';
+import { DelayOperatorComponent } from './components/operators/delay-operator/delay-operator.component';
 
 const routes: Routes = [
   {
@@ -347,6 +348,10 @@ const routes: Routes = [
       {
         path: 'dematerialize',
         component: DematerializeOperatorComponent,
+      },
+      {
+        path: 'delay',
+        component: DelayOperatorComponent,
       },
     ],
   },
