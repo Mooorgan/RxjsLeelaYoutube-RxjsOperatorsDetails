@@ -10,7 +10,7 @@ export class ObserveOnOperatorComponent implements OnInit, OnDestroy {
   subscription!: Subscription;
 
   ngOnInit(): void {
-    console.log('Hello');
+    console.log('Helloo');
     const source$ = of(1, 2, 3, 4, 5);
     this.subscription = source$
       .pipe(
