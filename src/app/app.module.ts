@@ -81,6 +81,7 @@ import { ObserveOnOperatorComponent } from './components/operators/observe-on-op
 import { MaterializeOperatorComponent } from './components/operators/materialize-operator/materialize-operator.component';
 import { DematerializeOperatorComponent } from './components/operators/dematerialize-operator/dematerialize-operator.component';
 import { DelayOperatorComponent } from './components/operators/delay-operator/delay-operator.component';
+import { CombineLatestAllOperatorComponent } from './components/operators/combine-latest-all-operator/combine-latest-all-operator.component';
 
 @NgModule({
   declarations: [
@@ -163,6 +164,7 @@ import { DelayOperatorComponent } from './components/operators/delay-operator/de
     MaterializeOperatorComponent,
     DematerializeOperatorComponent,
     DelayOperatorComponent,
+    CombineLatestAllOperatorComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

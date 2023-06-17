@@ -75,6 +75,7 @@ import { SubscribeOnOperatorComponent } from './components/operators/subscribe-o
 import { MaterializeOperatorComponent } from './components/operators/materialize-operator/materialize-operator.component';
 import { DematerializeOperatorComponent } from './components/operators/dematerialize-operator/dematerialize-operator.component';
 import { DelayOperatorComponent } from './components/operators/delay-operator/delay-operator.component';
+import { CombineLatestAllOperatorComponent } from './components/operators/combine-latest-all-operator/combine-latest-all-operator.component';
 
 const routes: Routes = [
   {
@@ -352,6 +353,10 @@ const routes: Routes = [
       {
         path: 'delay',
         component: DelayOperatorComponent,
+      },
+      {
+        path: 'combineLatestAll',
+        component: CombineLatestAllOperatorComponent,
       },
     ],
   },
