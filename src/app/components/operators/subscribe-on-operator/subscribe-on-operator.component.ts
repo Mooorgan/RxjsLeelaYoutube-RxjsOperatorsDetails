@@ -21,7 +21,7 @@ export class SubscribeOnOperatorComponent implements OnInit, OnDestroy {
     const source$ = of(1, 2, 3, 4, 5);
     this.subscription = source$
       .pipe(
-        subscribeOn(asyncScheduler),
+        subscribeOn(asyncScheduler, 3000),
         map((data) => {
           console.log('Inside map');
           return `Hey ${data}`;

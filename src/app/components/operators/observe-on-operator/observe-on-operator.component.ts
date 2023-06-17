@@ -19,12 +19,12 @@ export class ObserveOnOperatorComponent implements OnInit, OnDestroy {
           console.log('Inside map');
           return `Hey ${data}`;
         }),
-        observeOn(asyncScheduler),
+        observeOn(asyncScheduler, 4000),
 
         tap(() => {
           console.log('tappy');
         })
-        // observeOn(asyncScheduler)
+        // observeOn(asyncScheduler, 4000)
       )
       .subscribe({
         next: (value) => {
