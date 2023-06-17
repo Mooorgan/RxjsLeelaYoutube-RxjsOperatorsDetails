@@ -73,6 +73,7 @@ import { ToArrayOperatorComponent } from './components/operators/to-array-operat
 import { ObserveOnOperatorComponent } from './components/operators/observe-on-operator/observe-on-operator.component';
 import { SubscribeOnOperatorComponent } from './components/operators/subscribe-on-operator/subscribe-on-operator.component';
 import { MaterializeOperatorComponent } from './components/operators/materialize-operator/materialize-operator.component';
+import { DematerializeOperatorComponent } from './components/operators/dematerialize-operator/dematerialize-operator.component';
 
 const routes: Routes = [
   {
@@ -342,6 +343,10 @@ const routes: Routes = [
       {
         path: 'materialize',
         component: MaterializeOperatorComponent,
+      },
+      {
+        path: 'dematerialize',
+        component: DematerializeOperatorComponent,
       },
     ],
   },

@@ -79,6 +79,7 @@ import { ToArrayOperatorComponent } from './components/operators/to-array-operat
 import { SubscribeOnOperatorComponent } from './components/operators/subscribe-on-operator/subscribe-on-operator.component';
 import { ObserveOnOperatorComponent } from './components/operators/observe-on-operator/observe-on-operator.component';
 import { MaterializeOperatorComponent } from './components/operators/materialize-operator/materialize-operator.component';
+import { DematerializeOperatorComponent } from './components/operators/dematerialize-operator/dematerialize-operator.component';
 
 @NgModule({
   declarations: [
@@ -159,6 +160,7 @@ import { MaterializeOperatorComponent } from './components/operators/materialize
     SubscribeOnOperatorComponent,
     ObserveOnOperatorComponent,
     MaterializeOperatorComponent,
+    DematerializeOperatorComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
