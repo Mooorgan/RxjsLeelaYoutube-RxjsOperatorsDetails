@@ -75,6 +75,7 @@ import { FindOperatorComponent } from './components/operators/find-operator/find
 import { EveryOperatorComponent } from './components/operators/every-operator/every-operator.component';
 import { ScanOperatorComponent } from './components/operators/scan-operator/scan-operator.component';
 import { DefaultIfEmptyOperatorComponent } from './components/operators/default-if-empty-operator/default-if-empty-operator.component';
+import { ToArrayOperatorComponent } from './components/operators/to-array-operator/to-array-operator.component';
 
 @NgModule({
   declarations: [
@@ -151,6 +152,7 @@ import { DefaultIfEmptyOperatorComponent } from './components/operators/default-
     EveryOperatorComponent,
     ScanOperatorComponent,
     DefaultIfEmptyOperatorComponent,
+    ToArrayOperatorComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

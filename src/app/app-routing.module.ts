@@ -69,6 +69,7 @@ import { FindOperatorComponent } from './components/operators/find-operator/find
 import { EveryOperatorComponent } from './components/operators/every-operator/every-operator.component';
 import { ScanOperatorComponent } from './components/operators/scan-operator/scan-operator.component';
 import { DefaultIfEmptyOperatorComponent } from './components/operators/default-if-empty-operator/default-if-empty-operator.component';
+import { ToArrayOperatorComponent } from './components/operators/to-array-operator/to-array-operator.component';
 
 const routes: Routes = [
   {
@@ -322,6 +323,10 @@ const routes: Routes = [
       {
         path: 'defaultIfEmpty',
         component: DefaultIfEmptyOperatorComponent,
+      },
+      {
+        path: 'toArray',
+        component: ToArrayOperatorComponent,
       },
     ],
   },
