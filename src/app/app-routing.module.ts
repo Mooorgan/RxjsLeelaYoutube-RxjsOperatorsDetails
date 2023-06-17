@@ -65,6 +65,7 @@ import { MinOperatorComponent } from './components/operators/min-operator/min-op
 import { ReduceOperatorComponent } from './components/operators/reduce-operator/reduce-operator.component';
 import { IsEmptyOperatorComponent } from './components/operators/is-empty-operator/is-empty-operator.component';
 import { FindIndexOperatorComponent } from './components/operators/find-index-operator/find-index-operator.component';
+import { FindOperatorComponent } from './components/operators/find-operator/find-operator.component';
 
 const routes: Routes = [
   {
@@ -302,6 +303,10 @@ const routes: Routes = [
       {
         path: 'findIndex',
         component: FindIndexOperatorComponent,
+      },
+      {
+        path: 'find',
+        component: FindOperatorComponent,
       },
     ],
   },
