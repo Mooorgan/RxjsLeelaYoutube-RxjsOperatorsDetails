@@ -10,18 +10,20 @@ export class ToArrayOperatorComponent implements OnInit, OnDestroy {
   subscription!: Subscription;
 
   ngOnInit(): void {
+    console.log('Hello');
     const source$ =
       // of(1, 2, 3, 4, 5);
       // of();
       new Observable((observer) => {
         observer.next(1);
         observer.next(2);
+        console.log('middle');
         observer.next(3);
-        observer.complete();
-        // setTimeout(() => {
-        //   observer.next(4);
-        //   observer.complete();
-        // }, 3000);
+        // observer.complete();
+        setTimeout(() => {
+          observer.next(4);
+          // observer.complete();
+        }, 3000);
       });
     this.subscription = source$.pipe(toArray()).subscribe({
       next: (value) => {
@@ -35,6 +37,8 @@ export class ToArrayOperatorComponent implements OnInit, OnDestroy {
         console.log('Complete');
       },
     });
+
+    console.log('Bye');
   }
 
   ngOnDestroy(): void {

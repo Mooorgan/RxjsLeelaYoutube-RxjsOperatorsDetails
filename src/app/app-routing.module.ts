@@ -70,6 +70,8 @@ import { EveryOperatorComponent } from './components/operators/every-operator/ev
 import { ScanOperatorComponent } from './components/operators/scan-operator/scan-operator.component';
 import { DefaultIfEmptyOperatorComponent } from './components/operators/default-if-empty-operator/default-if-empty-operator.component';
 import { ToArrayOperatorComponent } from './components/operators/to-array-operator/to-array-operator.component';
+import { ObserveOnOperatorComponent } from './components/operators/observe-on-operator/observe-on-operator.component';
+import { SubscribeOnOperatorComponent } from './components/operators/subscribe-on-operator/subscribe-on-operator.component';
 
 const routes: Routes = [
   {
@@ -327,6 +329,14 @@ const routes: Routes = [
       {
         path: 'toArray',
         component: ToArrayOperatorComponent,
+      },
+      {
+        path: 'subscribeOn',
+        component: SubscribeOnOperatorComponent,
+      },
+      {
+        path: 'observeOn',
+        component: ObserveOnOperatorComponent,
       },
     ],
   },
