@@ -80,6 +80,7 @@ import { ConcatAllOperatorComponent } from './components/operators/concat-all-op
 import { ExhaustAllOperatorComponent } from './components/operators/exhaust-all-operator/exhaust-all-operator.component';
 import { SwitchAllOperatorComponent } from './components/operators/switch-all-operator/switch-all-operator.component';
 import { MergeAllOperatorComponent } from './components/operators/merge-all-operator/merge-all-operator.component';
+import { StartWithOperatorComponent } from './components/operators/start-with-operator/start-with-operator.component';
 
 const routes: Routes = [
   {
@@ -377,6 +378,10 @@ const routes: Routes = [
       {
         path: 'mergeAll',
         component: MergeAllOperatorComponent,
+      },
+      {
+        path: 'startWith',
+        component: StartWithOperatorComponent,
       },
     ],
   },
