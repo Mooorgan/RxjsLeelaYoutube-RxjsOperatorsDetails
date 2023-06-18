@@ -82,6 +82,7 @@ import { SwitchAllOperatorComponent } from './components/operators/switch-all-op
 import { MergeAllOperatorComponent } from './components/operators/merge-all-operator/merge-all-operator.component';
 import { StartWithOperatorComponent } from './components/operators/start-with-operator/start-with-operator.component';
 import { WithLatestFromOperatorComponent } from './components/operators/with-latest-from-operator/with-latest-from-operator.component';
+import { GroupByOperatorComponent } from './components/operators/group-by-operator/group-by-operator.component';
 
 const routes: Routes = [
   {
@@ -387,6 +388,10 @@ const routes: Routes = [
       {
         path: 'withLatestFrom',
         component: WithLatestFromOperatorComponent,
+      },
+      {
+        path: 'groupBy',
+        component: GroupByOperatorComponent,
       },
     ],
   },
