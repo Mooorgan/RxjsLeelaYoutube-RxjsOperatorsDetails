@@ -90,6 +90,11 @@ import { StartWithOperatorComponent } from './components/operators/start-with-op
 import { WithLatestFromOperatorComponent } from './components/operators/with-latest-from-operator/with-latest-from-operator.component';
 import { GroupByOperatorComponent } from './components/operators/group-by-operator/group-by-operator.component';
 import { PairwiseOperatorComponent } from './components/operators/pairwise-operator/pairwise-operator.component';
+import { WindowOperatorComponent } from './components/operators/window-operator/window-operator.component';
+import { WindowCountComponent } from './components/operators/window-count/window-count.component';
+import { WindowTimeComponent } from './components/operators/window-time/window-time.component';
+import { WindowToggleComponent } from './components/operators/window-toggle/window-toggle.component';
+import { WindowWhenComponent } from './components/operators/window-when/window-when.component';
 
 @NgModule({
   declarations: [
@@ -181,6 +186,11 @@ import { PairwiseOperatorComponent } from './components/operators/pairwise-opera
     WithLatestFromOperatorComponent,
     GroupByOperatorComponent,
     PairwiseOperatorComponent,
+    WindowOperatorComponent,
+    WindowCountComponent,
+    WindowTimeComponent,
+    WindowToggleComponent,
+    WindowWhenComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
