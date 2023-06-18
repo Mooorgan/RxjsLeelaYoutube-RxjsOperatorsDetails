@@ -84,6 +84,7 @@ import { DelayOperatorComponent } from './components/operators/delay-operator/de
 import { CombineLatestAllOperatorComponent } from './components/operators/combine-latest-all-operator/combine-latest-all-operator.component';
 import { ConcatAllOperatorComponent } from './components/operators/concat-all-operator/concat-all-operator.component';
 import { ExhaustAllOperatorComponent } from './components/operators/exhaust-all-operator/exhaust-all-operator.component';
+import { SwitchAllOperatorComponent } from './components/operators/switch-all-operator/switch-all-operator.component';
 
 @NgModule({
   declarations: [
@@ -169,6 +170,7 @@ import { ExhaustAllOperatorComponent } from './components/operators/exhaust-all-
     CombineLatestAllOperatorComponent,
     ConcatAllOperatorComponent,
     ExhaustAllOperatorComponent,
+    SwitchAllOperatorComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
