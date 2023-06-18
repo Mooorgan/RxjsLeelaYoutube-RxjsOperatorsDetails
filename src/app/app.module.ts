@@ -87,6 +87,7 @@ import { ExhaustAllOperatorComponent } from './components/operators/exhaust-all-
 import { SwitchAllOperatorComponent } from './components/operators/switch-all-operator/switch-all-operator.component';
 import { MergeAllOperatorComponent } from './components/operators/merge-all-operator/merge-all-operator.component';
 import { StartWithOperatorComponent } from './components/operators/start-with-operator/start-with-operator.component';
+import { WithLatestFromOperatorComponent } from './components/operators/with-latest-from-operator/with-latest-from-operator.component';
 
 @NgModule({
   declarations: [
@@ -175,6 +176,7 @@ import { StartWithOperatorComponent } from './components/operators/start-with-op
     SwitchAllOperatorComponent,
     MergeAllOperatorComponent,
     StartWithOperatorComponent,
+    WithLatestFromOperatorComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
