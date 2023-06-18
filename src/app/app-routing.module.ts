@@ -83,6 +83,7 @@ import { MergeAllOperatorComponent } from './components/operators/merge-all-oper
 import { StartWithOperatorComponent } from './components/operators/start-with-operator/start-with-operator.component';
 import { WithLatestFromOperatorComponent } from './components/operators/with-latest-from-operator/with-latest-from-operator.component';
 import { GroupByOperatorComponent } from './components/operators/group-by-operator/group-by-operator.component';
+import { PairwiseOperatorComponent } from './components/operators/pairwise-operator/pairwise-operator.component';
 
 const routes: Routes = [
   {
@@ -392,6 +393,10 @@ const routes: Routes = [
       {
         path: 'groupBy',
         component: GroupByOperatorComponent,
+      },
+      {
+        path: 'pairwise',
+        component: PairwiseOperatorComponent,
       },
     ],
   },
