@@ -6,15 +6,20 @@ import {
   asyncScheduler,
   audit,
   concat,
+  concatMap,
+  delay,
   exhaustMap,
   filter,
   fromEvent,
   interval,
   map,
   merge,
+  observeOn,
   of,
   queueScheduler,
+  range,
   scheduled,
+  subscribeOn,
   switchMap,
   take,
   tap,
@@ -91,8 +96,19 @@ export class ScheduledFunctionComponent implements OnInit, OnDestroy {
     //   });
     // console.log('End Concat');
     //----------------------------------------------------------------------------------------------
-    // console.log('Start Concat');
-    // const custom$ = new Observable((observer) => {
+    console.log('Start Concat');
+    const custom$ = range(1, 10000).pipe(
+      concatMap((value) =>
+        of(value).pipe(
+          // observeOn(queueScheduler),
+          // delay(200, queueScheduler)
+          delay(1)
+          // subscribeOn(queueScheduler)
+        )
+      )
+    );
+    // interval(500);
+    // new Observable((observer) => {
     //   for (let i = 1; i++, i <= 1000; ) {
     //     // setTimeout(() => {
     //     observer.next(i);
@@ -103,26 +119,26 @@ export class ScheduledFunctionComponent implements OnInit, OnDestroy {
     //     observer.complete();
     //   }, 4000);
     // });
-    // this.subscription = custom$
-    //   // this.subscription = scheduled(custom$, asapScheduler)
-    //   .pipe(
-    //     tap(console.log),
-    //     audit((ev) => {
-    //       return fromEvent(document.getElementById('showButton')!, 'click');
-    //     })
-    //   )
-    //   .subscribe({
-    //     next: (res) => {
-    //       console.log(`Result is ${res}`);
-    //     },
-    //     error: (err) => {
-    //       console.log(`Error is ${err}`);
-    //     },
-    //     complete: () => {
-    //       console.log('Completed');
-    //     },
-    //   });
-    // console.log('End Concat');
+    this.subscription = custom$
+      // this.subscription = scheduled(custom$, asapScheduler)
+      .pipe(
+        tap(console.log),
+        audit((ev) => {
+          return fromEvent(document.getElementById('showButton')!, 'click');
+        })
+      )
+      .subscribe({
+        next: (res) => {
+          console.log(`Result is ${res}`);
+        },
+        error: (err) => {
+          console.log(`Error is ${err}`);
+        },
+        complete: () => {
+          console.log('Completed');
+        },
+      });
+    console.log('End Concat');
   }
 
   ngOnDestroy(): void {
